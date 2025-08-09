@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>NAME</h1>
+    </div>
+    <div class="header-right">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <section>
+        <h2>About Me</h2>
+        <p>Creative front-end developer with a passion for clean UI.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>Email: example@mail.com</p>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Experience</h2>
+        <p>Internship at ABC Corp, freelance work, etc.</p>
+      </section>
+
+      <section>
+        <h2>Gallery</h2>
+        <p>Portfolio images or project screenshots.</p>
+      </section>
+
+      <section>
+        <h2>Registration Form</h2>
+        <form>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="course">Course:</label>
+          <select id="course" name="course">
+            <option value="web">Web Development</option>
+            <option value="design">UI/UX Design</option>
+            <option value="data">Data Science</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="rightbar">
+      <section>
+        <h2>Project</h2>
+        <p>Featured: Student Registration System</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Contact Me</p>
+  </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>NAME</h1>
+    </div>
+    <div class="header-right">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <section>
+        <h2>About Me</h2>
+        <p>Creative front-end developer with a passion for clean UI.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>Email: example@mail.com</p>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Experience</h2>
+        <p>Internship at ABC Corp, freelance work, etc.</p>
+      </section>
+
+      <section>
+        <h2>Gallery</h2>
+        <p>Portfolio images or project screenshots.</p>
+      </section>
+
+      <section>
+        <h2>Registration Form</h2>
+        <form>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="course">Course:</label>
+          <select id="course" name="course">
+            <option value="web">Web Development</option>
+            <option value="design">UI/UX Design</option>
+            <option value="data">Data Science</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="rightbar">
+      <section>
+        <h2>Project</h2>
+        <p>Featured: Student Registration System</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Contact Me</p>
+  </footer>
+</body>
+</html>
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.sidebar, .rightbar, main {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar h2, .rightbar h2, main h2 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #34495e;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
